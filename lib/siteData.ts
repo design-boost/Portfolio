@@ -430,7 +430,7 @@ export const resumeData = {
         },
         {
             date: '1999.04 - 2006.03',
-            degree: 'デジタルデザイナー / DTPオペレーター',
+            degree: 'グラフィックデザイナー / DTPオペレーター',
             university: '@株式会社共栄コーポレーション',
         },
     ]
