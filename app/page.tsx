@@ -1,7 +1,6 @@
 import About from "../components/About";
 import Services from "../components/Services";
 import Resume from "../components/Resume";
-import Testimonial from "../components/Testimonial";
 import Clients from "../components/Clients";
 // import Blog from "../components/Blog";
 import Portfolio from "../components/Portfolio";
@@ -26,9 +25,6 @@ export default function Home() {
 
                 {/* Portfolio */}
                 <Portfolio />
-
-                {/* Testimonial */}
-                <Testimonial />
 
                 {/* Resume */}
                 <Resume />
