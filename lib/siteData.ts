@@ -397,36 +397,41 @@ export const resumeData = {
     },
     education: [
         {
-            date: '2015 - 2019',
-            degree: '情報工学学士',
-            university: '@東京工科大学',
+            date: '1994.04 - 1997.03',
+            degree: '電子科',
+            university: '@福島県立会津工業高等学校',
         },
         {
-            date: '2013 - 2015',
-            degree: '情報処理科',
-            university: '@専門学校',
-        },
-        {
-            date: '2010 - 2013',
-            degree: '普通科',
-            university: '@県立高校',
+            date: '1997.04 - 1999.03',
+            degree: 'デジタルデザイン学科',
+            university: '@日本工学院専門学校',
         },
     ],
     experience: [
         {
-            date: '2021 - 現在',
-            degree: 'シニアフロントエンド開発者',
-            university: '@テックスタートアップ',
+            date: '2025.06 - 現在',
+            degree: 'デジタル戦略 / プロダクトマネージャー',
+            university: '@株式会社ジンズ',
         },
         {
-            date: '2019 - 2021',
-            degree: 'ウェブ開発者',
-            university: '@ITコンサルティング会社',
+            date: '2018.03 - 2024.12',
+            degree: 'ECプロダクトマネージャー',
+            university: '@株式会社ベイクルーズ',
         },
         {
-            date: '2016 - 2019',
-            degree: 'UIデザイナー（インターン）',
-            university: '@デザインエージェンシー',
+            date: '2010.04 - 2017.12',
+            degree: 'ECディレクター / UIUXリード',
+            university: '@株式会社MOA（現エクスプライス株式会社）',
+        },
+        {
+            date: '2006.03 - 2010.03',
+            degree: 'WEBディレクター / UIデザイナー',
+            university: '@株式会社童夢',
+        },
+        {
+            date: '1999.04 - 2006.03',
+            degree: 'デジタルデザイナー / DTPオペレーター',
+            university: '@株式会社共栄コーポレーション',
         },
     ]
 };
