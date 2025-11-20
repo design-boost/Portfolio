@@ -11,7 +11,7 @@ import CorpImg from '@/public/images/corp.png';
 import KithImg from '@/public/images/kith.png';
 import LikesImg from '@/public/images/likes.png';
 import MastermindImg from '@/public/images/mastermind.png';
-import RescueForcePoster from '@/public/images/rescue-force-poster.png';
+import RescueForcePoster from '@/public/images/tomica.jpg';
 
 export const headerData = {
     mainData: {
@@ -134,7 +134,6 @@ export const portfolioData = {
                 image: RescueForcePoster,
                 alt: 'トミカヒーロー レスキューフォース劇場版ポスター'
             },
-            referenceUrl: 'https://www.tomica-rescue.com/',
             categories: [
                 { name: 'プロモーション' },
                 { name: 'WEBサイト' },
@@ -635,4 +634,5 @@ export const mapData = {
         lat: -3.745,
         lng: -38.523,
     },
+};
 };
