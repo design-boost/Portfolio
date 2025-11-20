@@ -11,6 +11,7 @@ import CorpImg from '@/public/images/corp.png';
 import KithImg from '@/public/images/kith.png';
 import LikesImg from '@/public/images/likes.png';
 import MastermindImg from '@/public/images/mastermind.png';
+import RescueForcePoster from '@/public/images/rescue-force-poster.png';
 
 export const headerData = {
     mainData: {
@@ -111,8 +112,47 @@ export const portfolioData = {
         title2: "My Latest Works",
         description: "過去のプロジェクト実績の一部です。詳細は個別にお問い合わせください。"
     },
-    filterCategories: ["Show All", "EC開発", "WEBサイト", "CMS開発"],
+    filterCategories: ["Show All", "EC開発", "WEBサイト", "CMS開発", "プロモーション"],
     projects: [
+        {
+            projectTitle: 'トミカヒーロー レスキューフォース 爆裂MOVIE',
+            slug: 'rescue-force-movie',
+            description: '劇場版「トミカヒーロー レスキューフォース」キャンペーンにおいて、映画ポスター、公式サイト、パンフレット、劇場ノベルティまで一括でデザインを担当。子ども向け作品らしいワクワク感と、レスキューマシンの重厚さを両立させるため、カラーリングやレイアウトを統一しながら各媒体に最適化しました。',
+            keywords: '映画プロモーション, グラフィック, WEB, パンフレット, ノベルティ',
+            category: 'プロモーション',
+            services: 'アートディレクション, WEBデザイン, グラフィック制作, ノベルティ企画',
+            client: 'トミカヒーロープロジェクト',
+            duration: '4ヶ月',
+            mainImage: RescueForcePoster,
+            images: [
+                {
+                    image: RescueForcePoster,
+                    alt: 'トミカヒーロー レスキューフォース劇場版ポスター'
+                }
+            ],
+            imagesLightbox: {
+                image: RescueForcePoster,
+                alt: 'トミカヒーロー レスキューフォース劇場版ポスター'
+            },
+            referenceUrl: 'https://www.tomica-rescue.com/',
+            categories: [
+                { name: 'プロモーション' },
+                { name: 'WEBサイト' },
+                { name: 'グラフィック' }
+            ],
+            techStack: [
+                { name: 'Adobe Photoshop', icon: 'bi bi-brush' },
+                { name: 'Adobe Illustrator', icon: 'bi bi-pen' },
+                { name: 'Adobe InDesign', icon: 'bi bi-journal-richtext' },
+                { name: 'HTML/CSS', icon: 'bi bi-filetype-html' },
+                { name: 'After Effects', icon: 'bi bi-film' }
+            ],
+            features: [
+                { name: 'メディア横断の統一感', description: 'ポスターからWeb、パンフレット、ノベルティまで共通トーンでブランド体験を構築' },
+                { name: '子ども向けUX', description: '公式サイトではキャラクター紹介やムービー視聴導線を強調し、操作感をシンプルに調整' },
+                { name: '大量印刷を想定したデータ管理', description: '劇場配布物に合わせたカラーマネジメントと入稿データテンプレートを整備' }
+            ]
+        },
         {
             projectTitle: 'BAYCREW\'S Store WEB&アプリ改善',
             slug: 'baycrews-app',
