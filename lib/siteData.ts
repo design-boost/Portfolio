@@ -635,4 +635,3 @@ export const mapData = {
         lng: -38.523,
     },
 };
-};
