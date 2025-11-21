@@ -12,6 +12,7 @@ import KithImg from '@/public/images/kith.png';
 import LikesImg from '@/public/images/likes.png';
 import MastermindImg from '@/public/images/mastermind.png';
 import RescueForcePoster from '@/public/images/tomica.png';
+import BloganceImg from '@/public/images/autoblog.png';
 
 export const headerData = {
     mainData: {
@@ -115,6 +116,46 @@ export const portfolioData = {
     filterCategories: ["Show All", "EC開発", "WEBサイト", "CMS開発", "プロモーション"],
     projects: [
         {
+            projectTitle: 'Blogance - AI Persona Writer',
+            slug: 'blogance-ai-persona-writer',
+            description: 'Shopify ECサイト向けの有償アプリ開発プロジェクト。「店長」や「バイヤー」などの架空のペルソナを設定すると、その人物になりきった文体でブログを自動投稿し続けるEC運営補助システム。2025年2月下旬にリリースし、現在海外中心に10サイト程度まで導入。フロントエンドのUIや訴求ビジュアルを担当し、バックエンド部分は外部に委託。',
+            keywords: 'Shopify, AI, ブログ自動生成, EC運営補助, SaaS',
+            category: 'EC開発',
+            services: 'UI/UXデザイン, フロントエンド開発, ビジュアルデザイン',
+            client: 'ECboost',
+            duration: '2025年2月リリース',
+            mainImage: BloganceImg,
+            images: [
+                {
+                    image: BloganceImg,
+                    alt: 'Blogance - AI Persona Writer アプリ画面'
+                }
+            ],
+            imagesLightbox: {
+                image: BloganceImg,
+                alt: 'Blogance - AI Persona Writer アプリ画面'
+            },
+            referenceUrl: 'https://x.gd/yeqIt',
+            categories: [
+                { name: 'EC開発' },
+                { name: 'Shopifyアプリ' }
+            ],
+            techStack: [
+                { name: 'Shopify App', icon: 'bi bi-shop' },
+                { name: 'React', icon: 'bi bi-code-slash' },
+                { name: 'TypeScript', icon: 'bi bi-filetype-tsx' },
+                { name: 'Shopify Polaris', icon: 'bi bi-layout-text-window' },
+                { name: 'AI API連携', icon: 'bi bi-robot' },
+                { name: 'GraphQL', icon: 'bi bi-diagram-3' }
+            ],
+            features: [
+                { name: 'ペルソナ設定機能', description: '店長やバイヤーなど最大3名までAI著者スタイルを事前設定可能' },
+                { name: '自動ブログ投稿', description: '設定したペルソナになりきった文体でブログ記事を自動生成・投稿' },
+                { name: '商品リンク自動挿入', description: 'SEO効果を高めるため、記事内に商品リンクを自動挿入' },
+                { name: '予約投稿機能', description: '最適な公開タイミングを設定し、継続的なコンテンツマーケティングを実現' }
+            ]
+        },
+        {
             projectTitle: 'トミカヒーロー レスキューフォース 爆裂MOVIE',
             slug: 'rescue-force-movie',
             description: '劇場版「トミカヒーロー レスキューフォース」キャンペーンにおいて、映画ポスター、公式サイト、パンフレット、劇場ノベルティまで一括でデザインを担当。子ども向け作品らしいワクワク感と、レスキューマシンの重厚さを両立させるため、カラーリングやレイアウトを統一しながら各媒体に最適化しました。',
@@ -143,6 +184,8 @@ export const portfolioData = {
                 { name: 'Adobe Photoshop', icon: 'bi bi-brush' },
                 { name: 'Adobe Illustrator', icon: 'bi bi-pen' },
                 { name: 'Adobe InDesign', icon: 'bi bi-journal-richtext' },
+                { name: 'Adobe Flash', icon: 'bi bi-lightning' },
+                { name: 'ActionScript 2.0', icon: 'bi bi-code-slash' },
                 { name: 'HTML/CSS', icon: 'bi bi-filetype-html' },
                 { name: 'After Effects', icon: 'bi bi-film' }
             ],
