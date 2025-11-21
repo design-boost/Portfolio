@@ -19,8 +19,8 @@ export const headerData = {
     mainData: {
         firstName: 'Tamagawa',
         secondName: 'Portfolio',
-        phone: '+81 90 1234 5678',
-        email: 'example@example.com',
+        phone: '+81 80 5055 2585',
+        email: 'designboost@gmail.com',
         copywriter: '2024',
         socialLinks: [
             {
