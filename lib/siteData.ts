@@ -14,9 +14,9 @@ import MastermindImg from '@/public/images/mastermind.png';
 import RescueForcePoster from '@/public/images/tomica.png';
 import BloganceImg from '@/public/images/autoblog.png';
 import CampSnapImg from '@/public/images/campsnap.png';
-import MediaPlaceholder1 from '@/public/images/media-placeholder-1.png';
-import MediaPlaceholder2 from '@/public/images/media-placeholder-2.png';
-import MediaPlaceholder3 from '@/public/images/media-placeholder-3.png';
+import MediaImg1 from '@/public/images/media1.png';
+import MediaImg2 from '@/public/images/media2.png';
+import MediaImg3 from '@/public/images/media3.jpg';
 
 export const headerData = {
     mainData: {
@@ -579,7 +579,7 @@ export const mediaData = {
             title: 'ベイクルーズ執行役員玉川氏による「フリクションレスな顧客体験の重要性について」をテーマとしたセミナーの開催',
             url: 'https://prtimes.jp/main/html/rd/p/000000103.000057359.html',
             description: 'オムニチャネルやOMO、ユニファイドコマースといった時代のバズワードに流されず、顧客中心で考えましょう、といった旨のセミナーを行いました。',
-            thumbnail: MediaPlaceholder1,
+            thumbnail: MediaImg1,
             source: 'PR TIMES',
             date: '2024年'
         },
@@ -587,7 +587,7 @@ export const mediaData = {
             title: 'EC売上500億円突破！ベイクルーズがZETA SEARCH活用で取り組む、サイト内検索のUX向上',
             url: 'https://eczine.jp/article/detail/9256',
             description: '国内の検索エンジンサービスを提供する企業の販促記事です。',
-            thumbnail: MediaPlaceholder2,
+            thumbnail: MediaImg2,
             source: 'ECzine',
             date: '2024年'
         },
@@ -595,7 +595,7 @@ export const mediaData = {
             title: 'レビュー収集率が20倍以上に？！「YOTPO」の活用で、ECサイトのSEO強化＆運営を効率化',
             url: 'https://seleck.cc/619',
             description: '家電EC企業時代、イスラエルのレビューツールを導入した際の取材です。',
-            thumbnail: MediaPlaceholder3,
+            thumbnail: MediaImg3,
             source: 'Seleck',
             date: '2024年'
         },
