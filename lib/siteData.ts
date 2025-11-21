@@ -114,7 +114,7 @@ export const portfolioData = {
         title2: "My Latest Works",
         description: "過去のプロジェクト実績の一部です。詳細は個別にお問い合わせください。"
     },
-    filterCategories: ["Show All", "EC開発", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
+    filterCategories: ["Show All", "EC開発", "EC構築", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
     projects: [
         {
             projectTitle: 'Blogance - AI Persona Writer',
@@ -334,7 +334,7 @@ export const portfolioData = {
             slug: 'mastermind-ec',
             description: '裏原ブームの時に一世を風靡した高級ストリートブランドmastermind JAPANの公式ECサイト開発。ベイクルーズが小売ライセンスを取得し、店舗販売に加えECサイトを構築。高額商品のため中国本土、香港、韓国の富裕層向けの越境ECを前提とした設計。ShopifyのLiquid Templatesを用いて本格的なデザインを実現し、モバイルアプリはAppifyというソリューションで開発。',
             keywords: 'EC, ラグジュアリーブランド, UI/UX, 越境EC, Shopify, Liquid',
-            category: 'EC開発',
+            category: 'EC構築',
             client: '株式会社ベイクルーズ',
             duration: '9ヶ月',
             mainImage: MastermindImg,
@@ -349,7 +349,7 @@ export const portfolioData = {
                 alt: 'mastermind JAPAN EC'
             },
             categories: [
-                { name: 'EC開発' },
+                { name: 'EC構築' },
                 { name: 'UI/UX' }
             ],
             referenceUrl: 'https://mastermindtokyo.com/',
