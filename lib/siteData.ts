@@ -114,7 +114,7 @@ export const portfolioData = {
         title2: "My Latest Works",
         description: "過去のプロジェクト実績の一部です。詳細は個別にお問い合わせください。"
     },
-    filterCategories: ["Show All", "EC開発", "EC構築", "Shopifyアプリ開発", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
+    filterCategories: ["Show All", "EC開発", "EC構築", "EC&アプリグロース", "Shopifyアプリ開発", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
     projects: [
         {
             projectTitle: 'Blogance - AI Persona Writer',
@@ -237,7 +237,7 @@ export const portfolioData = {
             slug: 'baycrews-app',
             description: 'アパレルEC企業のデジタル施策改善プロジェクト。Web to App戦略により、売上を伸ばしながら広告費を削減し、利益率改善に貢献しました。アプリCVRはWebの約2倍を実現。',
             keywords: 'EC, モバイルアプリ, UI/UX, CRM',
-            category: 'EC開発',
+            category: 'EC&アプリグロース',
             services: 'プロジェクト管理, UI/UXデザイン, 開発ディレクション',
             client: '株式会社ベイクルーズ',
             duration: '7年',
@@ -257,8 +257,7 @@ export const portfolioData = {
                 url: 'https://www.youtube.com/watch?v=V8yu12uRpBA'
             },
             categories: [
-                { name: 'EC開発' },
-                { name: 'アプリ開発' },
+                { name: 'EC&アプリグロース' },
                 { name: 'UI/UX' }
             ],
             techStack: [
