@@ -11,7 +11,7 @@ import CorpImg from '@/public/images/corp.png';
 import KithImg from '@/public/images/kith.png';
 import LikesImg from '@/public/images/likes.png';
 import MastermindImg from '@/public/images/mastermind.png';
-import RescueForcePoster from '@/public/images/tomica.jpg';
+import RescueForcePoster from '@/public/images/tomica.png';
 
 export const headerData = {
     mainData: {
