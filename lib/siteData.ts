@@ -524,6 +524,16 @@ export const resumeData = {
             degree: '電子科',
             university: '@福島県立会津工業高等学校',
         },
+        {
+            date: '1991.04 - 1994.03',
+            degree: '卒業',
+            university: '@福島県会津若松市立第二中学校',
+        },
+        {
+            date: '1988.04 - 1991.03',
+            degree: '卒業',
+            university: '@福島県立鶴城小学校',
+        },
     ],
     experience: [
         {
