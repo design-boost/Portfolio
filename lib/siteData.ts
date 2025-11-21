@@ -516,22 +516,22 @@ export const resumeData = {
     education: [
         {
             date: '1988.04 - 1991.03',
-            degree: '-',
+            degree: '小学校',
             university: '@福島県立鶴城小学校',
         },
         {
             date: '1991.04 - 1994.03',
-            degree: '-',
+            degree: '中学校',
             university: '@福島県会津若松市立第二中学校',
         },
         {
             date: '1994.04 - 1997.03',
-            degree: '電子科',
+            degree: '高校 電子科',
             university: '@福島県立会津工業高等学校',
         },
         {
             date: '1997.04 - 1999.03',
-            degree: 'デジタルデザイン学科',
+            degree: '専門学校 デジタルデザイン学科',
             university: '@日本工学院専門学校',
         },
     ],
