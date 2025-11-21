@@ -13,6 +13,7 @@ import LikesImg from '@/public/images/likes.png';
 import MastermindImg from '@/public/images/mastermind.png';
 import RescueForcePoster from '@/public/images/tomica.png';
 import BloganceImg from '@/public/images/autoblog.png';
+import CampSnapImg from '@/public/images/campsnap.png';
 
 export const headerData = {
     mainData: {
@@ -113,15 +114,15 @@ export const portfolioData = {
         title2: "My Latest Works",
         description: "過去のプロジェクト実績の一部です。詳細は個別にお問い合わせください。"
     },
-    filterCategories: ["Show All", "EC開発", "WEBサイト", "CMS開発", "プロモーション"],
+    filterCategories: ["Show All", "EC開発", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
     projects: [
         {
             projectTitle: 'Blogance - AI Persona Writer',
             slug: 'blogance-ai-persona-writer',
-            description: 'Shopify ECサイト向けの有償アプリ開発プロジェクト。「店長」や「バイヤー」などの架空のペルソナを設定すると、その人物になりきった文体でブログを自動投稿し続けるEC運営補助システム。2025年2月下旬にリリースし、現在海外中心に10サイト程度まで導入。フロントエンドのUIや訴求ビジュアルを担当し、バックエンド部分は外部に委託。',
+            description: 'Shopify ECサイト向けの有償アプリ開発プロジェクト。「店長」や「バイヤー」などの架空のペルソナを設定すると、その人物になりきった文体でブログを自動投稿し続けるEC運営補助システム。2025年2月下旬にリリースし、現在海外中心に10サイト程度まで導入。要件定義、UI、デザインを担当し、バックエンド部分は友人に依頼。',
             keywords: 'Shopify, AI, ブログ自動生成, EC運営補助, SaaS',
             category: 'EC開発',
-            services: 'UI/UXデザイン, フロントエンド開発, ビジュアルデザイン',
+            services: '要件定義, UI/UXデザイン, デザイン',
             client: 'ECboost',
             duration: '2025年2月リリース',
             mainImage: BloganceImg,
@@ -145,7 +146,7 @@ export const portfolioData = {
                 { name: 'React', icon: 'bi bi-code-slash' },
                 { name: 'TypeScript', icon: 'bi bi-filetype-tsx' },
                 { name: 'Shopify Polaris', icon: 'bi bi-layout-text-window' },
-                { name: 'AI API連携', icon: 'bi bi-robot' },
+                { name: 'ChatGPT 3.5 API', icon: 'bi bi-robot' },
                 { name: 'GraphQL', icon: 'bi bi-diagram-3' }
             ],
             features: [
@@ -153,6 +154,43 @@ export const portfolioData = {
                 { name: '自動ブログ投稿', description: '設定したペルソナになりきった文体でブログ記事を自動生成・投稿' },
                 { name: '商品リンク自動挿入', description: 'SEO効果を高めるため、記事内に商品リンクを自動挿入' },
                 { name: '予約投稿機能', description: '最適な公開タイミングを設定し、継続的なコンテンツマーケティングを実現' }
+            ]
+        },
+        {
+            projectTitle: 'CampSnap | キャンプスナップ',
+            slug: 'campsnap',
+            description: '趣味のキャンプログ用アプリが欲しくなり、勉強の一貫として開発したiOSアプリ。カメラで切り取った一瞬に、ひとこと添えてアップするキャンプの記録アプリ。2025年2月下旬にリリース。技術的な実験の場として今後も開発継続予定。開発もデザインも全て自分一人で担当。',
+            keywords: 'iOS, キャンプ, ログ, 写真, 地図連携, 天気',
+            category: 'iOSアプリ',
+            services: '要件定義, UI/UXデザイン, デザイン, フロントエンド開発, バックエンド開発',
+            client: '個人プロジェクト',
+            duration: '2025年2月リリース',
+            mainImage: CampSnapImg,
+            images: [
+                {
+                    image: CampSnapImg,
+                    alt: 'CampSnap iOSアプリ画面'
+                }
+            ],
+            imagesLightbox: {
+                image: CampSnapImg,
+                alt: 'CampSnap iOSアプリ画面'
+            },
+            categories: [
+                { name: 'iOSアプリ' }
+            ],
+            techStack: [
+                { name: 'Swift', icon: 'bi bi-apple' },
+                { name: 'iOS', icon: 'bi bi-phone' },
+                { name: 'Firebase', icon: 'bi bi-cloud' },
+                { name: 'BunnyCDN', icon: 'bi bi-cloud-arrow-down' },
+                { name: 'Algolia', icon: 'bi bi-search' }
+            ],
+            features: [
+                { name: '写真とコメント投稿', description: 'カメラで切り取った一瞬に、ひとこと添えてアップするシンプルなキャンプログ機能' },
+                { name: '地図連携', description: 'MAP連携でルートや所要時間を簡単にチェック可能' },
+                { name: '天気・気温表示', description: 'キャンプ場の天気や気温、日の出・日の入り時刻を簡単にチェック' },
+                { name: '検索機能', description: 'Algoliaによる高速な検索機能で過去のキャンプログを素早く見つけられる' }
             ]
         },
         {
