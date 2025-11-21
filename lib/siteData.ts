@@ -515,9 +515,14 @@ export const resumeData = {
     },
     education: [
         {
-            date: '1997.04 - 1999.03',
-            degree: 'デジタルデザイン学科',
-            university: '@日本工学院専門学校',
+            date: '1988.04 - 1991.03',
+            degree: '-',
+            university: '@福島県立鶴城小学校',
+        },
+        {
+            date: '1991.04 - 1994.03',
+            degree: '-',
+            university: '@福島県会津若松市立第二中学校',
         },
         {
             date: '1994.04 - 1997.03',
@@ -525,31 +530,16 @@ export const resumeData = {
             university: '@福島県立会津工業高等学校',
         },
         {
-            date: '1991.04 - 1994.03',
-            degree: '卒業',
-            university: '@福島県会津若松市立第二中学校',
-        },
-        {
-            date: '1988.04 - 1991.03',
-            degree: '卒業',
-            university: '@福島県立鶴城小学校',
+            date: '1997.04 - 1999.03',
+            degree: 'デジタルデザイン学科',
+            university: '@日本工学院専門学校',
         },
     ],
     experience: [
         {
-            date: '2025.06 - 現在',
-            degree: 'デジタル戦略 / プロダクトマネージャー',
-            university: '@株式会社ジンズ',
-        },
-        {
-            date: '2018.03 - 2024.12',
-            degree: 'ECプロダクトマネージャー',
-            university: '@株式会社ベイクルーズ',
-        },
-        {
-            date: '2010.04 - 2017.12',
-            degree: 'ECディレクター / UIUXリード',
-            university: '@株式会社MOA（現エクスプライス株式会社）',
+            date: '1999.04 - 2006.03',
+            degree: 'グラフィックデザイナー / DTPオペレーター',
+            university: '@株式会社共栄コーポレーション',
         },
         {
             date: '2006.03 - 2010.03',
@@ -557,9 +547,19 @@ export const resumeData = {
             university: '@株式会社童夢',
         },
         {
-            date: '1999.04 - 2006.03',
-            degree: 'グラフィックデザイナー / DTPオペレーター',
-            university: '@株式会社共栄コーポレーション',
+            date: '2010.04 - 2017.12',
+            degree: 'ECディレクター / UIUXリード',
+            university: '@株式会社MOA（現エクスプライス株式会社）',
+        },
+        {
+            date: '2018.03 - 2024.12',
+            degree: 'ECプロダクトマネージャー',
+            university: '@株式会社ベイクルーズ',
+        },
+        {
+            date: '2025.06 - 現在',
+            degree: 'デジタル戦略 / プロダクトマネージャー',
+            university: '@株式会社ジンズ',
         },
     ]
 };
