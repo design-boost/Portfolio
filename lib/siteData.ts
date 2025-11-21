@@ -117,14 +117,14 @@ export const portfolioData = {
         title2: "My Latest Works",
         description: "過去のプロジェクト実績の一部です。詳細は個別にお問い合わせください。"
     },
-    filterCategories: ["Show All", "EC開発", "EC構築", "EC&アプリグロース", "Shopifyアプリ開発", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
+    filterCategories: ["Show All", "EC", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
     projects: [
         {
             projectTitle: 'Blogance - AI Persona Writer',
             slug: 'blogance-ai-persona-writer',
             description: 'Shopify ECサイト向けの有償アプリ開発プロジェクト。「店長」や「バイヤー」などの架空のペルソナを設定すると、その人物になりきった文体でブログを自動投稿し続けるEC運営補助システム。2025年2月下旬にリリースし、現在海外中心に10サイト程度まで導入。要件定義、UI、デザインを担当し、バックエンド部分は友人に依頼。',
             keywords: 'Shopify, AI, ブログ自動生成, EC運営補助, SaaS',
-            category: 'Shopifyアプリ開発',
+            category: 'EC',
             services: '要件定義, UI/UXデザイン, デザイン',
             client: 'ECboost',
             duration: '2025年2月リリース',
@@ -141,7 +141,7 @@ export const portfolioData = {
             },
             referenceUrl: 'https://x.gd/yeqIt',
             categories: [
-                { name: 'Shopifyアプリ開発' }
+                { name: 'EC' }
             ],
             techStack: [
                 { name: 'Shopify App', icon: 'bi bi-shop' },
@@ -240,7 +240,7 @@ export const portfolioData = {
             slug: 'baycrews-app',
             description: 'アパレルEC企業のデジタル施策改善プロジェクト。Web to App戦略により、売上を伸ばしながら広告費を削減し、利益率改善に貢献しました。アプリCVRはWebの約2倍を実現。',
             keywords: 'EC, モバイルアプリ, UI/UX, CRM',
-            category: 'EC&アプリグロース',
+            category: 'EC',
             services: 'プロジェクト管理, UI/UXデザイン, 開発ディレクション',
             client: '株式会社ベイクルーズ',
             duration: '7年',
@@ -260,7 +260,7 @@ export const portfolioData = {
                 url: 'https://www.youtube.com/watch?v=V8yu12uRpBA'
             },
             categories: [
-                { name: 'EC&アプリグロース' },
+                { name: 'EC' },
                 { name: 'UI/UX' }
             ],
             techStack: [
@@ -335,7 +335,7 @@ export const portfolioData = {
             slug: 'mastermind-ec',
             description: '裏原ブームの時に一世を風靡した高級ストリートブランドmastermind JAPANの公式ECサイト開発。ベイクルーズが小売ライセンスを取得し、店舗販売に加えECサイトを構築。高額商品のため中国本土、香港、韓国の富裕層向けの越境ECを前提とした設計。ShopifyのLiquid Templatesを用いて本格的なデザインを実現し、モバイルアプリはAppifyというソリューションで開発。',
             keywords: 'EC, ラグジュアリーブランド, UI/UX, 越境EC, Shopify, Liquid',
-            category: 'EC構築',
+            category: 'EC',
             client: '株式会社ベイクルーズ',
             duration: '9ヶ月',
             mainImage: MastermindImg,
@@ -350,7 +350,7 @@ export const portfolioData = {
                 alt: 'mastermind JAPAN EC'
             },
             categories: [
-                { name: 'EC構築' },
+                { name: 'EC' },
                 { name: 'UI/UX' }
             ],
             referenceUrl: 'https://mastermindtokyo.com/',
@@ -429,7 +429,7 @@ export const portfolioData = {
             },
             categories: [
                 { name: 'WEBサイト' },
-                { name: 'EC開発' }
+                { name: 'EC' }
             ],
             referenceUrl: 'https://kithtokyo.com/',
             techStack: [
