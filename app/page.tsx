@@ -1,7 +1,7 @@
 import About from "../components/About";
 import Services from "../components/Services";
 import Resume from "../components/Resume";
-import Clients from "../components/Clients";
+import Media from "../components/Media";
 // import Blog from "../components/Blog";
 import Portfolio from "../components/Portfolio";
 import Connect from "../components/Connect";
@@ -29,8 +29,8 @@ export default function Home() {
                 {/* Resume */}
                 <Resume />
 
-                {/* Clients */}
-                <Clients />
+                {/* Media */}
+                <Media />
 
                 {/* Contact */}
                 <Connect />

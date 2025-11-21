@@ -14,6 +14,9 @@ import MastermindImg from '@/public/images/mastermind.png';
 import RescueForcePoster from '@/public/images/tomica.png';
 import BloganceImg from '@/public/images/autoblog.png';
 import CampSnapImg from '@/public/images/campsnap.png';
+import MediaPlaceholder1 from '@/public/images/media-placeholder-1.png';
+import MediaPlaceholder2 from '@/public/images/media-placeholder-2.png';
+import MediaPlaceholder3 from '@/public/images/media-placeholder-3.png';
 
 export const headerData = {
     mainData: {
@@ -565,41 +568,36 @@ export const resumeData = {
 };
 
 
-export const clientsData = {
+export const mediaData = {
     mainData: {
-        title: "Clients",
-        title2: "My Awesome Clients",
+        title: "Media",
+        title2: "メディア掲載",
+        description: "業務を通じて得た知見を共有する機会として、セミナー登壇や取材を受ける機会がありました。以下の内容は私をご判断いただくための参考資料としてご覧ください。"
     },
-    clients: [
+    media: [
         {
-            lightLogo: Logo,
-            darkLogo: Logo,
-            url: '#',
+            title: 'ベイクルーズ執行役員玉川氏による「フリクションレスな顧客体験の重要性について」をテーマとしたセミナーの開催',
+            url: 'https://prtimes.jp/main/html/rd/p/000000103.000057359.html',
+            description: 'オムニチャネルやOMO、ユニファイドコマースといった時代のバズワードに流されず、顧客中心で考えましょう、といった旨のセミナーを行いました。',
+            thumbnail: MediaPlaceholder1,
+            source: 'PR TIMES',
+            date: '2024年'
         },
         {
-            lightLogo: Logo,
-            darkLogo: Logo,
-            url: '#',
+            title: 'EC売上500億円突破！ベイクルーズがZETA SEARCH活用で取り組む、サイト内検索のUX向上',
+            url: 'https://eczine.jp/article/detail/9256',
+            description: '国内の検索エンジンサービスを提供する企業の販促記事です。',
+            thumbnail: MediaPlaceholder2,
+            source: 'ECzine',
+            date: '2024年'
         },
         {
-            lightLogo: Logo,
-            darkLogo: Logo,
-            url: '#',
-        },
-        {
-            lightLogo: Logo,
-            darkLogo: Logo,
-            url: '#',
-        },
-        {
-            lightLogo: Logo,
-            darkLogo: Logo,
-            url: '#',
-        },
-        {
-            lightLogo: Logo,
-            darkLogo: Logo,
-            url: '#',
+            title: 'レビュー収集率が20倍以上に？！「YOTPO」の活用で、ECサイトのSEO強化＆運営を効率化',
+            url: 'https://seleck.cc/619',
+            description: '家電EC企業時代、イスラエルのレビューツールを導入した際の取材です。',
+            thumbnail: MediaPlaceholder3,
+            source: 'Seleck',
+            date: '2024年'
         },
     ]
 };
