@@ -515,14 +515,14 @@ export const resumeData = {
     },
     education: [
         {
-            date: '1994.04 - 1997.03',
-            degree: '電子科',
-            university: '@福島県立会津工業高等学校',
-        },
-        {
             date: '1997.04 - 1999.03',
             degree: 'デジタルデザイン学科',
             university: '@日本工学院専門学校',
+        },
+        {
+            date: '1994.04 - 1997.03',
+            degree: '電子科',
+            university: '@福島県立会津工業高等学校',
         },
     ],
     experience: [
