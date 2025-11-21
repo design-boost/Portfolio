@@ -114,14 +114,14 @@ export const portfolioData = {
         title2: "My Latest Works",
         description: "過去のプロジェクト実績の一部です。詳細は個別にお問い合わせください。"
     },
-    filterCategories: ["Show All", "EC開発", "EC構築", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
+    filterCategories: ["Show All", "EC開発", "EC構築", "Shopifyアプリ開発", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
     projects: [
         {
             projectTitle: 'Blogance - AI Persona Writer',
             slug: 'blogance-ai-persona-writer',
             description: 'Shopify ECサイト向けの有償アプリ開発プロジェクト。「店長」や「バイヤー」などの架空のペルソナを設定すると、その人物になりきった文体でブログを自動投稿し続けるEC運営補助システム。2025年2月下旬にリリースし、現在海外中心に10サイト程度まで導入。要件定義、UI、デザインを担当し、バックエンド部分は友人に依頼。',
             keywords: 'Shopify, AI, ブログ自動生成, EC運営補助, SaaS',
-            category: 'EC開発',
+            category: 'Shopifyアプリ開発',
             services: '要件定義, UI/UXデザイン, デザイン',
             client: 'ECboost',
             duration: '2025年2月リリース',
@@ -138,8 +138,7 @@ export const portfolioData = {
             },
             referenceUrl: 'https://x.gd/yeqIt',
             categories: [
-                { name: 'EC開発' },
-                { name: 'Shopifyアプリ' }
+                { name: 'Shopifyアプリ開発' }
             ],
             techStack: [
                 { name: 'Shopify App', icon: 'bi bi-shop' },
