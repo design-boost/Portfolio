@@ -38,6 +38,18 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
         e.preventDefault();
         setError('');
 
+        // デバッグ用：ログイン試行時の値を確認
+        console.log('=== Login Attempt ===');
+        console.log('Input username:', username);
+        console.log('Input password:', password);
+        console.log('Expected username:', AUTH_USERNAME);
+        console.log('Expected password:', AUTH_PASSWORD);
+        console.log('Username match:', username === AUTH_USERNAME);
+        console.log('Password match:', password === AUTH_PASSWORD);
+        console.log('Username length:', username.length, 'vs', AUTH_USERNAME.length);
+        console.log('Password length:', password.length, 'vs', AUTH_PASSWORD.length);
+        console.log('=====================');
+
         if (username === AUTH_USERNAME && password === AUTH_PASSWORD) {
             localStorage.setItem('portfolio_auth', 'authenticated');
             setIsAuthenticated(true);
