@@ -80,20 +80,6 @@ const Header: React.FC = () => {
                     </h4>
                 </div>
 
-                <ul className="space-x-2 mt-4">
-                    {headerData.mainData.socialLinks.map((link, index) => (
-                        <li key={index} className="list-none inline-block">
-                            <Link
-                                href={link.url}
-                                className="inline-flex justify-center items-center bg-white/15 w-10 h-10 rounded-full text-white transition ease-out duration-150 hover:bg-white/20"
-                                aria-label={'Social link'}
-                            >
-                                <i className={link.icon}></i>
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-
                 <ul className="mt-10 space-y-2">
                     <li className="relative pl-3 before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-white before:opacity-70 before:w-1 before:h-1 before:rounded-full transition-all duration-100 hover:before:opacity-100">
                         <button
@@ -104,20 +90,22 @@ const Header: React.FC = () => {
                             {mounted && theme === 'dark' ? 'Light Version' : 'Dark Version'}
                         </button>
                     </li>
-                    {headerData.links.map((item, index) => (
-                        <li
-                            key={index}
-                            className="relative pl-3 before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-white before:opacity-70 before:w-1 before:h-1 before:rounded-full transition-all duration-100 hover:before:opacity-100"
-                        >
-                            <Link
-                                href={item.url}
-                                className="font-mono font-medium uppercase text-sm tracking-[0.5px] text-white hover:underline"
-                                onClick={closeMenu}
+                    {headerData.links
+                        .filter((item) => item.name !== 'ポートフォリオ')
+                        .map((item, index) => (
+                            <li
+                                key={index}
+                                className="relative pl-3 before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-white before:opacity-70 before:w-1 before:h-1 before:rounded-full transition-all duration-100 hover:before:opacity-100"
                             >
-                                {item.name}
-                            </Link>
-                        </li>
-                    ))}
+                                <Link
+                                    href={item.url}
+                                    className="font-mono font-medium uppercase text-sm tracking-[0.5px] text-white hover:underline"
+                                    onClick={closeMenu}
+                                >
+                                    {item.name}
+                                </Link>
+                            </li>
+                        ))}
                     {isAuthenticated && (
                         <li className="relative pl-3 before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-white before:opacity-70 before:w-1 before:h-1 before:rounded-full transition-all duration-100 hover:before:opacity-100">
                             <button
