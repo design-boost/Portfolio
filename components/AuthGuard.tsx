@@ -38,19 +38,23 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
         e.preventDefault();
         setError('');
 
+        // 入力値をトリム（前後の空白を削除）
+        const trimmedUsername = username.trim();
+        const trimmedPassword = password.trim();
+        const trimmedAuthUsername = AUTH_USERNAME.trim();
+        const trimmedAuthPassword = AUTH_PASSWORD.trim();
+
         // デバッグ用：ログイン試行時の値を確認
         console.log('=== Login Attempt ===');
-        console.log('Input username:', username);
-        console.log('Input password:', password);
-        console.log('Expected username:', AUTH_USERNAME);
-        console.log('Expected password:', AUTH_PASSWORD);
-        console.log('Username match:', username === AUTH_USERNAME);
-        console.log('Password match:', password === AUTH_PASSWORD);
-        console.log('Username length:', username.length, 'vs', AUTH_USERNAME.length);
-        console.log('Password length:', password.length, 'vs', AUTH_PASSWORD.length);
+        console.log('Input username:', JSON.stringify(trimmedUsername));
+        console.log('Input password:', JSON.stringify(trimmedPassword));
+        console.log('Expected username:', JSON.stringify(trimmedAuthUsername));
+        console.log('Expected password:', JSON.stringify(trimmedAuthPassword));
+        console.log('Username match:', trimmedUsername === trimmedAuthUsername);
+        console.log('Password match:', trimmedPassword === trimmedAuthPassword);
         console.log('=====================');
 
-        if (username === AUTH_USERNAME && password === AUTH_PASSWORD) {
+        if (trimmedUsername === trimmedAuthUsername && trimmedPassword === trimmedAuthPassword) {
             localStorage.setItem('portfolio_auth', 'authenticated');
             setIsAuthenticated(true);
         } else {
