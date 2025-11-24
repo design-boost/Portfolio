@@ -62,13 +62,6 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
         }
     };
 
-    const handleLogout = () => {
-        localStorage.removeItem('portfolio_auth');
-        setIsAuthenticated(false);
-        setUsername('');
-        setPassword('');
-    };
-
     // 認証状態が確定するまで何も表示しない
     if (isAuthenticated === null) {
         return (
