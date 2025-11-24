@@ -12,11 +12,15 @@ import KithImg from '@/public/images/kith.png';
 import LikesImg from '@/public/images/likes.png';
 import MastermindImg from '@/public/images/mastermind.png';
 import RescueForcePoster from '@/public/images/tomica.png';
+import RescueForceWeb from '@/public/images/rescue.png';
 import BloganceImg from '@/public/images/autoblog.png';
 import CampSnapImg from '@/public/images/campsnap.png';
 import MediaImg1 from '@/public/images/media1.png';
 import MediaImg2 from '@/public/images/media2.png';
 import MediaImg3 from '@/public/images/media3.jpg';
+import HostelImg1 from '@/public/images/hostel1.png';
+import HostelImg2 from '@/public/images/hostel2.png';
+import RoadTrainImg from '@/public/images/road-train.png';
 
 export const headerData = {
     mainData: {
@@ -73,14 +77,14 @@ export const headerData = {
 
 export const aboutData = {
     mainData: {
-        title: "自己紹介",
+        title: "About Me",
         title2: "About Me",
         heroAvatar: HeroAvatar,
         jobTitle: "UI＆UX Designer\nWEB Director\nProduct Manager",
         description: "UI/UXデザインからデジタル戦略まで、事業成長を実現するための包括的な支援が可能です。ECプラットフォーム開発やモバイルアプリ運用の経験を活かし、使いやすさと事業KPI達成を両立するソリューションを提案します。",
         yearsOfExperience: "26",
-        hoursOfWorking: "51",
-        companiesWorked: "4",
+        hoursOfWorking: "52",
+        companiesWorked: "5",
         typewriter: ['UI＆UX Designer', 'WEB Director', 'Product Manager'],
     },
     skills: [
@@ -114,10 +118,10 @@ export const aboutData = {
 export const portfolioData = {
     mainData: {
         title: "Portfolio",
-        title2: "My Latest Works",
+        title2: "ポートフォリオ",
         description: "過去のプロジェクト実績の一部です。詳細は個別にお問い合わせください。"
     },
-    filterCategories: ["Show All", "E-commerce", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ"],
+    filterCategories: ["Show All", "E-commerce", "WEBサイト", "CMS開発", "プロモーション", "iOSアプリ", "不動産開発", "プロダクトデザイン"],
     projects: [
         {
             projectTitle: 'Blogance - AI Persona Writer',
@@ -193,46 +197,6 @@ export const portfolioData = {
                 { name: '地図連携', description: 'MAP連携でルートや所要時間を簡単にチェック可能' },
                 { name: '天気・気温表示', description: 'キャンプ場の天気や気温、日の出・日の入り時刻を簡単にチェック' },
                 { name: '検索機能', description: 'Algoliaによる高速な検索機能で過去のキャンプログを素早く見つけられる' }
-            ]
-        },
-        {
-            projectTitle: 'トミカヒーロー レスキューフォース 爆裂MOVIE',
-            slug: 'rescue-force-movie',
-            description: '劇場版「トミカヒーロー レスキューフォース」キャンペーンにおいて、映画ポスター、公式サイト、パンフレット、劇場ノベルティまで一括でデザインを担当。子ども向け作品らしいワクワク感と、レスキューマシンの重厚さを両立させるため、カラーリングやレイアウトを統一しながら各媒体に最適化しました。',
-            keywords: '映画プロモーション, グラフィック, WEB, パンフレット, ノベルティ',
-            category: 'プロモーション',
-            services: 'アートディレクション, WEBデザイン, グラフィック制作, ノベルティ企画',
-            client: 'トミカヒーロープロジェクト',
-            duration: '4ヶ月',
-            mainImage: RescueForcePoster,
-            images: [
-                {
-                    image: RescueForcePoster,
-                    alt: 'トミカヒーロー レスキューフォース劇場版ポスター'
-                }
-            ],
-            imagesLightbox: {
-                image: RescueForcePoster,
-                alt: 'トミカヒーロー レスキューフォース劇場版ポスター'
-            },
-            categories: [
-                { name: 'プロモーション' },
-                { name: 'WEBサイト' },
-                { name: 'グラフィック' }
-            ],
-            techStack: [
-                { name: 'Adobe Photoshop', icon: 'bi bi-brush' },
-                { name: 'Adobe Illustrator', icon: 'bi bi-pen' },
-                { name: 'Adobe InDesign', icon: 'bi bi-journal-richtext' },
-                { name: 'Adobe Flash', icon: 'bi bi-lightning' },
-                { name: 'ActionScript 2.0', icon: 'bi bi-code-slash' },
-                { name: 'HTML/CSS', icon: 'bi bi-filetype-html' },
-                { name: 'After Effects', icon: 'bi bi-film' }
-            ],
-            features: [
-                { name: 'メディア横断の統一感', description: 'ポスターからWeb、パンフレット、ノベルティまで共通トーンでブランド体験を構築' },
-                { name: '子ども向けUX', description: '公式サイトではキャラクター紹介やムービー視聴導線を強調し、操作感をシンプルに調整' },
-                { name: '大量印刷を想定したデータ管理', description: '劇場配布物に合わせたカラーマネジメントと入稿データテンプレートを整備' }
             ]
         },
         {
@@ -445,39 +409,185 @@ export const portfolioData = {
                 { name: 'インターナショナル配送', icon: 'bi bi-globe' }
             ],
         },
+        {
+            projectTitle: 'MOA HOSTEL - 事業用ビルコンバージョン',
+            slug: 'moa-hostel',
+            description: '新規事業部に異動し、課長として取り組んだプロジェクト。東京オリンピックを前に観光立国政策が進む中、事業用ビルをバックパッカー向けのゲストハウスにコンバージョンした。消防法や旅館業法をクリアし、投資回収期間を短縮する設計を実現。建築士と協力しながらビルのデザインや工事立会、IoTを活用した運営効率化を担当。また、宿泊予約サイトコントローラー「temairazu（手間いらず）」を導入し、じゃらんやブッキングドットコムでの在庫管理やダイナミックプライシングによる収益最大化施策にも取り組んだ。最終的にコロナ禍により事業は閉鎖しビルは売却されたが、トータルでは黒字を達成。',
+            keywords: '不動産開発, 建築, リノベーション, ゲストハウス, 旅館業法, 消防法, IoT, 投資回収, temairazu, 宿泊予約管理, ダイナミックプライシング',
+            category: '不動産開発',
+            services: 'プロジェクト管理, 不動産選定, 建築設計協力, 工事立会, IoT導入, 運営効率化, 宿泊予約システム導入, 収益管理',
+            client: '株式会社MOA（現エクスプライス株式会社）',
+            duration: '2016年4月 - 2017年12月',
+            mainImage: HostelImg1,
+            images: [
+                {
+                    image: HostelImg1,
+                    alt: 'MOA HOSTEL 外観'
+                },
+                {
+                    image: HostelImg2,
+                    alt: 'MOA HOSTEL 内装'
+                }
+            ],
+            imagesLightbox: {
+                image: HostelImg1,
+                alt: 'MOA HOSTEL 外観'
+            },
+            categories: [
+                { name: '不動産開発' }
+            ],
+            techStack: [
+                { name: '建築設計', icon: 'bi bi-building' },
+                { name: '消防法対応', icon: 'bi bi-shield-check' },
+                { name: '旅館業法対応', icon: 'bi bi-file-earmark-check' },
+                { name: 'IoT', icon: 'bi bi-wifi' },
+                { name: '不動産投資分析', icon: 'bi bi-graph-up' },
+                { name: '工事管理', icon: 'bi bi-tools' },
+                { name: 'temairazu（手間いらず）', icon: 'bi bi-calendar-check' },
+                { name: 'じゃらん連携', icon: 'bi bi-link-45deg' },
+                { name: 'Booking.com連携', icon: 'bi bi-globe' },
+                { name: 'ダイナミックプライシング', icon: 'bi bi-graph-up-arrow' }
+            ],
+            features: [
+                { name: '法規制クリア', description: '消防法と旅館業法の両方をクリアできる物件選定と設計' },
+                { name: '投資回収期間の最適化', description: '都内の事業用不動産を分析し、投資回収期間が短い物件を選定' },
+                { name: '建築設計協力', description: '建築士と協力しながら、バックパッカー向けの機能的なデザインを実現' },
+                { name: 'IoT活用', description: '運営効率化のため、IoTデバイスを活用した自動化システムを導入' },
+                { name: '工事立会', description: 'コンバージョン工事の立会いを行い、設計意図の実現をサポート' },
+                { name: '宿泊予約システム導入', description: 'temairazu（手間いらず）を導入し、複数の予約サイトを一元管理' },
+                { name: '在庫管理の最適化', description: 'じゃらんやブッキングドットコムでの在庫管理を効率化し、ダブルブッキングを防止' },
+                { name: 'ダイナミックプライシング', description: '需要に応じた料金設定により収益最大化を実現' }
+            ],
+            address: '2-8-5 Iwamoto-cho, Chiyoda-ku, Akihabara, Tokyo, Japan, 101-0032',
+            referenceUrl: 'https://www.temairazu.com/'
+        },
+        {
+            projectTitle: 'トミカヒーロー レスキューフォース 爆裂MOVIE',
+            slug: 'rescue-force-movie',
+            description: '劇場版「トミカヒーロー レスキューフォース」キャンペーンにおいて、映画ポスター、公式サイト（フルFlashで作成）、パンフレット、劇場ノベルティまで一括でデザインを担当。子ども向け作品らしいワクワク感と、レスキューマシンの重厚さを両立させるため、カラーリングやレイアウトを統一しながら各媒体に最適化しました。',
+            keywords: '映画プロモーション, グラフィック, WEB, パンフレット, ノベルティ',
+            category: 'プロモーション',
+            services: 'アートディレクション, WEBデザイン, グラフィック制作, ノベルティ企画',
+            client: 'トミカヒーロープロジェクト',
+            duration: '4ヶ月',
+            mainImage: RescueForcePoster,
+            images: [
+                {
+                    image: RescueForcePoster,
+                    alt: 'トミカヒーロー レスキューフォース劇場版ポスター'
+                },
+                {
+                    image: RescueForceWeb,
+                    alt: 'トミカヒーロー レスキューフォース公式サイト（Flash）'
+                }
+            ],
+            imagesLightbox: {
+                image: RescueForcePoster,
+                alt: 'トミカヒーロー レスキューフォース劇場版ポスター'
+            },
+            categories: [
+                { name: 'プロモーション' },
+                { name: 'WEBサイト' },
+                { name: 'グラフィック' }
+            ],
+            techStack: [
+                { name: 'Adobe Photoshop', icon: 'bi bi-brush' },
+                { name: 'Adobe Illustrator', icon: 'bi bi-pen' },
+                { name: 'Adobe InDesign', icon: 'bi bi-journal-richtext' },
+                { name: 'Adobe Flash', icon: 'bi bi-lightning' },
+                { name: 'ActionScript 2.0', icon: 'bi bi-code-slash' },
+                { name: 'HTML/CSS', icon: 'bi bi-filetype-html' },
+                { name: 'After Effects', icon: 'bi bi-film' }
+            ],
+            features: [
+                { name: 'メディア横断の統一感', description: 'ポスターからWeb、パンフレット、ノベルティまで共通トーンでブランド体験を構築' },
+                { name: '子ども向けUX', description: '公式サイトではキャラクター紹介やムービー視聴導線を強調し、操作感をシンプルに調整' },
+                { name: '大量印刷を想定したデータ管理', description: '劇場配布物に合わせたカラーマネジメントと入稿データテンプレートを整備' }
+            ],
+            referenceUrl: 'https://vgmdb.net/album/119219'
+        },
+        {
+            projectTitle: 'こども用乗り物遊具 - ショッピングモール向けSL列車',
+            slug: 'road-train',
+            description: 'ショッピングモールなどで走らせるこども用の乗り物遊具のデザイン・設計プロジェクト。先頭車両はゴルフカートのベースに、弁慶という蒸気機関車（SL）をデフォルメした外装（ボディ）を載せた構造。後ろの3両は木製で、先頭車両が牽引する形式。3DCADソフトを使用して全体のデザインと構造設計を行い、下町の町工場に出向いて溶接などの製造工程を直接依頼・管理した。煙突にはスモークマシンを仕込んで煙を出す機能を実装し、ノスタルジックな音楽やSLの汽笛をPA（Public Address）システムで再生できる仕様とした。',
+            keywords: 'プロダクトデザイン, 工業デザイン, 3DCAD, 構造設計, 遊具, ショッピングモール, 製造管理, スモークマシン, PAシステム',
+            category: 'プロダクトデザイン',
+            services: 'プロダクトデザイン, 3DCAD設計, 構造設計, 製造管理, 外装デザイン',
+            client: '株式会社童夢',
+            duration: '2009年頃（約6ヶ月）',
+            mainImage: RoadTrainImg,
+            images: [
+                {
+                    image: RoadTrainImg,
+                    alt: 'こども用乗り物遊具 - ショッピングモール向けSL列車'
+                }
+            ],
+            imagesLightbox: {
+                image: RoadTrainImg,
+                alt: 'こども用乗り物遊具 - ショッピングモール向けSL列車'
+            },
+            categories: [
+                { name: 'プロダクトデザイン' }
+            ],
+            techStack: [
+                { name: '3DCAD', icon: 'bi bi-box-seam' },
+                { name: 'プロダクトデザイン', icon: 'bi bi-palette' },
+                { name: '構造設計', icon: 'bi bi-diagram-3' },
+                { name: '外装デザイン', icon: 'bi bi-brush' },
+                { name: '製造管理', icon: 'bi bi-tools' },
+                { name: '溶接工程管理', icon: 'bi bi-gear' },
+                { name: 'スモークマシン', icon: 'bi bi-cloud' },
+                { name: 'PAシステム', icon: 'bi bi-speaker' }
+            ],
+            features: [
+                { name: '3DCADによる設計', description: '3次元CADソフトを使用して全体のデザインと構造設計を実施' },
+                { name: 'ハイブリッド構造', description: '先頭車両はゴルフカートベースにSLをデフォルメした外装を組み合わせた構造' },
+                { name: '牽引式設計', description: '後ろの3両は木製で、先頭車両が牽引するシンプルな構造' },
+                { name: 'スモークマシン機能', description: '煙突にスモークマシンを仕込んで、本物のSLのような煙を演出' },
+                { name: 'PAシステムによる音響演出', description: 'ノスタルジックな音楽やSLの汽笛をPAシステムで再生し、臨場感を高める' },
+                { name: '製造工程管理', description: '下町の町工場に出向き、溶接などの製造工程を直接依頼・管理' },
+                { name: '安全性への配慮', description: 'こどもが乗る遊具として、安全性を最優先に設計' }
+            ]
+        },
     ]
 };
 
 export const servicesData = {
     mainData: {
-        title: "サービス",
-        title2: "提供サービス",
-        description: "各種ウェブ開発・デザイン関連のサービスを提供しています"
+        title: "Skill Set",
+        title2: "スキルセット",
+        description: "これまでに経験してきた技術領域です"
     },
     services: [
         {
             number: '01',
             icon: 'bi bi-code-slash',
             title: 'フロントエンド開発',
-            description: 'React、Next.js、TypeScriptを使用したモダンなウェブアプリケーションの開発。レスポンシブデザインと高パフォーマンスを重視します。',
+            description: 'React、Next.js、TypeScriptを使用したモダンなウェブアプリケーションの開発。jQueryを用いた開発経験もあります。レスポンシブデザインと高パフォーマンスを重視します。',
         },
         {
             number: '02',
             icon: 'bi bi-server',
-            title: 'バックエンド開発',
-            description: 'Node.js、Express、MongoDB、FirebaseなどによるAPIおよびデータベース設計。スケーラブルなバックエンドシステムを構築します。',
+            title: 'バックエンド連携',
+            description: 'Firebaseなどのサーバレス環境を用いた経験があります。REST APIを理解し、フロントエンド開発での連携対応が可能です。ピュアPHPでの開発やWordPressのカスタマイズ経験もあります。',
         },
         {
             number: '03',
             icon: 'bi bi-palette',
-            title: 'UIデザイン',
-            description: 'Figmaを用いたモダンでユーザーフレンドリーなUIデザイン。使いやすさとビジュアルの美しさを両立したデザインを提供します。',
+            title: 'UI/UXデザイン',
+            description: 'Figmaを用いたモダンでユーザーフレンドリーなUI/UXデザイン。使いやすさとビジュアルの美しさを両立したデザインを提供します。',
         },
         {
             number: '04',
             icon: 'bi bi-lightning',
             title: 'ウェブパフォーマンス最適化',
             description: '既存ウェブサイトの表示速度とユーザー体験の改善。SEOに配慮したパフォーマンス最適化を行います。',
+        },
+        {
+            number: '05',
+            icon: 'bi bi-graph-up-arrow',
+            title: 'WEBマーケティング',
+            description: '広告の最適化やSNSマーケティング、CRM設計など、デジタルマーケティング全般をサポート。データドリブンな施策で成果を最大化します。',
         },
     ]
 };
@@ -512,7 +622,7 @@ export const testimonialData = {
 
 export const resumeData = {
     mainData: {
-        title: "経歴",
+        title: "Resume",
         title2: "学歴と職歴",
         description: "これまでの学歴と職務経験について紹介します"
     },
@@ -570,7 +680,7 @@ export const resumeData = {
 
 export const mediaData = {
     mainData: {
-        title: "Media",
+        title: "Media Coverage",
         title2: "メディア掲載",
         description: "業務を通じて得た知見を共有する機会として、セミナー登壇や取材を受ける機会がありました。以下の内容は私をご判断いただくための参考資料としてご覧ください。"
     },
@@ -706,13 +816,21 @@ export const blogData = {
 
 export const contactData = {
     mainData: {
-        title: "Clients",
+        title: "Contact",
         title2: "Get in touch",
-        title3: "Let's Connect",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-        phone: "+976 12 34 9999",
-        email: "flatheme@gmail.com",
-        address: "121 King St, Melbourne VIC 3000",
+        title3: "連絡先",
+        description: "お問い合わせは電話またはメールでお願いいたします。",
+        name: "玉川 寛一",
+        nameFurigana: "たまがわ かんいち",
+        birthdate: "1978年5月1日生",
+        age: "満47歳",
+        gender: "男",
+        postalCode: "〒225-0002",
+        address: "神奈川県横浜市青葉区美しが丘1-19-2 4-8-103",
+        nearestStation: "東急田園都市線たまプラーザ駅徒歩10分",
+        phone: "+81 80 5055 2585",
+        email: "designboost@gmail.com",
+        hobbies: ["キャンプ", "DIY"],
     }
 };
 

@@ -10,6 +10,7 @@ import { seoData } from "@/lib/seoData";
 import Header from "@/components/Header";
 import BackgroundDecorationalLines from "@/components/BackgroundDecorationalLines";
 import { ThemeProvider } from "@/components/theme-provider";
+import AuthGuard from "@/components/AuthGuard";
 
 
 export const metadata: Metadata = {
@@ -43,15 +44,17 @@ export default function RootLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <div className="container max-w-[1320px] mx-auto px-5 xl:px-3">
+                    <AuthGuard>
+                        <div className="container max-w-[1320px] mx-auto px-5 xl:px-3">
 
-                        {/* Header */}
-                        <Header />
+                            {/* Header */}
+                            <Header />
 
-                        {children}
-                    </div>
+                            {children}
+                        </div>
 
-                    <BackgroundDecorationalLines />
+                        <BackgroundDecorationalLines />
+                    </AuthGuard>
                 </ThemeProvider>
             </body>
         </html >

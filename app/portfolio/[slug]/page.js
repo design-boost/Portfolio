@@ -88,7 +88,29 @@ export default function PortfolioDetail({ params }) {
               />
             </div>
             
-            {false && project.images && project.images.length > 0 && (
+            {params.slug === 'moa-hostel' && project.images && project.images.length > 1 && (
+              <div className="mt-4 overflow-hidden rounded-lg">
+                <Image 
+                  src={project.images[1].image} 
+                  alt={project.images[1].alt || `${project.projectTitle} image 2`}
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto"
+                />
+              </div>
+            )}
+            {params.slug === 'rescue-force-movie' && project.images && project.images.length > 1 && (
+              <div className="mt-4 overflow-hidden rounded-lg">
+                <Image 
+                  src={project.images[1].image} 
+                  alt={project.images[1].alt || `${project.projectTitle} image 2`}
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto"
+                />
+              </div>
+            )}
+            {params.slug !== 'moa-hostel' && params.slug !== 'rescue-force-movie' && project.images && project.images.length > 0 && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 {project.images.map((img, idx) => (
                   <div key={idx} className="overflow-hidden rounded-lg">
@@ -104,6 +126,104 @@ export default function PortfolioDetail({ params }) {
               </div>
             )}
           </div>
+
+          {/* MOA HOSTELプロジェクト専用の追加情報 */}
+          {params.slug === 'moa-hostel' && (
+            <div className="mt-12 border-t border-gray-200 dark:border-gray-700 pt-8">
+              <h2 className="text-2xl font-poppins font-semibold mb-6 dark:text-white">プロジェクト詳細</h2>
+              
+              <div className="mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+                <h3 className="text-xl font-semibold mb-4 dark:text-white">
+                  <i className="bi bi-geo-alt me-2"></i>
+                  所在地
+                </h3>
+                <p className="text-pColor dark:text-white/70">{project.address}</p>
+              </div>
+
+              <div className="mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+                <h3 className="text-xl font-semibold mb-4 dark:text-white">
+                  <i className="bi bi-info-circle me-2"></i>
+                  プロジェクト背景
+                </h3>
+                <div className="space-y-3 text-pColor dark:text-white/70">
+                  <p>
+                    株式会社MOA（現エクスプライス株式会社）の新規事業部に異動し、課長として取り組んだプロジェクトでした。東京オリンピックを前に、当時の安倍首相が観光立国を目指す発言があり、ホテルが足りなくなると言われ始めたことを受けて始めた新規事業でした。事業用ビルをバックパッカー向けのゲストハウスにコンバージョンすることで、投資回収期間を短縮しながら、観光需要に対応する施設を提供することを目指しました。
+                  </p>
+                  <p>
+                    最終的にコロナ禍により事業は閉鎖し、ビルは売却されましたが、トータルでは黒字を達成することができました。
+                  </p>
+                </div>
+              </div>
+
+                  <div className="mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+                <h3 className="text-xl font-semibold mb-4 dark:text-white">
+                  <i className="bi bi-briefcase me-2"></i>
+                  担当業務
+                </h3>
+                <div className="space-y-3 text-pColor dark:text-white/70">
+                  <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-3 py-1">
+                    <p className="font-medium">消防法・旅館業法クリアのための物件選定</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">法規制をクリアできる都内の事業用不動産を探し、投資回収期間が短い物件を選定</p>
+                  </div>
+                  <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-3 py-1">
+                    <p className="font-medium">建築士との協力によるデザイン設計</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">建築士と相談しながら、バックパッカー向けの機能的なデザインを実現</p>
+                  </div>
+                  <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-3 py-1">
+                    <p className="font-medium">工事立会</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">コンバージョン工事の立会いを行い、設計意図の実現をサポート</p>
+                  </div>
+                  <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-3 py-1">
+                    <p className="font-medium">IoTを活用した運営効率化</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">IoTデバイスを活用した自動化システムを導入し、運営コストの削減を実現</p>
+                  </div>
+                  <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-3 py-1">
+                    <p className="font-medium">宿泊予約システム導入（temairazu）</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">宿泊予約サイトコントローラー「temairazu（手間いらず）」を導入し、複数の予約サイトを一元管理</p>
+                  </div>
+                  <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-3 py-1">
+                    <p className="font-medium">在庫管理の最適化</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">じゃらんやブッキングドットコムでの在庫管理を効率化し、ダブルブッキングを防止</p>
+                  </div>
+                  <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-3 py-1">
+                    <p className="font-medium">ダイナミックプライシング施策</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">需要に応じた料金設定により収益最大化を実現</p>
+                  </div>
+                </div>
+              </div>
+
+              {project.features && (
+                <div className="mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+                  <h3 className="text-xl font-semibold mb-4 dark:text-white">主要機能・特徴</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {project.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-start p-2">
+                        <i className="bi bi-check-circle text-lg mr-3 text-gray-600 dark:text-gray-400 mt-1"></i>
+                        <div>
+                          <div className="text-black dark:text-white font-medium">{feature.name}</div>
+                          <div className="text-sm text-gray-600 dark:text-gray-400">{feature.description}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {project.referenceUrl && (
+                <div className="mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+                  <h3 className="text-lg font-semibold mb-3 dark:text-white">参考リンク</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center">
+                      <i className="bi bi-globe text-lg mr-3 text-gray-600 dark:text-gray-400"></i>
+                      <a href={project.referenceUrl} target="_blank" rel="noopener noreferrer" className="text-black dark:text-white underline">
+                        temairazu（手間いらず）公式サイト
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* ベイクルーズプロジェクト専用の追加情報 */}
           {params.slug === 'baycrews-app' && (
@@ -296,7 +416,7 @@ export default function PortfolioDetail({ params }) {
 
           <div className="mt-12 border-t border-gray-200 dark:border-gray-700 pt-8">
             {/* 通常の参考リンクセクション（LIKES以外のプロジェクト用） */}
-            {params.slug !== 'content-cms' && (
+            {params.slug !== 'content-cms' && params.slug !== 'moa-hostel' && (
               <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold mb-3 dark:text-white">参考リンク</h3>
                 <div className="space-y-3">
@@ -316,7 +436,28 @@ export default function PortfolioDetail({ params }) {
                       </div>
                     </>
                   )}
-                  {project.referenceUrl && params.slug !== 'content-cms' && (
+                  {params.slug === 'moa-hostel' && project.referenceUrl && (
+                    <div className="flex items-center">
+                      <i className="bi bi-globe text-lg mr-3 text-gray-600 dark:text-gray-400"></i>
+                      <a href={project.referenceUrl} target="_blank" rel="noopener noreferrer" className="text-black dark:text-white underline">
+                        temairazu（手間いらず）公式サイト
+                      </a>
+                    </div>
+                  )}
+                  {params.slug === 'rescue-force-movie' && project.referenceUrl && (
+                    <>
+                      <div className="flex items-center mb-2">
+                        <i className="bi bi-globe text-lg mr-3 text-gray-600 dark:text-gray-400"></i>
+                        <a href={project.referenceUrl} target="_blank" rel="noopener noreferrer" className="text-black dark:text-white underline">
+                          Tomica Hero: Rescue Force Original Soundtrack
+                        </a>
+                      </div>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 ml-8 mt-1">
+                        リンク先のクレジットでは所属が「ロックオンパワーズ」と記載されています。フリーランスとして活動させていただく上で、便宜上子会社側の所属としています。
+                      </p>
+                    </>
+                  )}
+                  {project.referenceUrl && params.slug !== 'content-cms' && params.slug !== 'moa-hostel' && params.slug !== 'rescue-force-movie' && (
                     <div className="flex items-center">
                       <i className="bi bi-globe text-lg mr-3 text-gray-600 dark:text-gray-400"></i>
                       <a href={project.referenceUrl} target="_blank" rel="noopener noreferrer" className="text-black dark:text-white underline">
@@ -329,7 +470,7 @@ export default function PortfolioDetail({ params }) {
             )}
 
             {/* 主要機能セクション - LIKESプロジェクト用 */}
-            {params.slug === 'content-cms' && project.features && (
+            {(params.slug === 'content-cms' || params.slug === 'moa-hostel') && project.features && params.slug !== 'moa-hostel' && (
               <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold mb-3 dark:text-white">主要機能</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

@@ -128,19 +128,6 @@ const Header: React.FC = () => {
                 className="lg:flex lg:justify-between"
             >
                 <div className="flex h-[50px] items-center space-x-6 lg:order-2 justify-end">
-                    <ul className="space-x-3.5 font-mono font-medium uppercase text-sm tracking-[0.5px]">
-                        {headerData.socialLinks.map((item, index) => (
-                            <li key={index} className="list-none inline-block">
-                                <Link
-                                    href={item.url}
-                                    className="hover:underline dark:text-white"
-                                >
-                                    {item.name}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-
                     <button
                         className="menu-btn group relative w-[50px] h-[50px] bg-black dark:bg-boxDark rounded-b-lg"
                         aria-label="Toggle navigation menu"
@@ -152,10 +139,12 @@ const Header: React.FC = () => {
                 </div>
 
                 <div className="py-7 lg:order-1">
-                    <h1 className="text-5xl xl:text-7xl font-poppins font-semibold dark:text-white">
-                        {headerData.mainData.firstName}{' '}
-                        <span className="stroke-text">{headerData.mainData.secondName}</span>
-                    </h1>
+                    <Link href="/#about" className="block">
+                        <h1 className="text-5xl xl:text-7xl font-poppins font-semibold dark:text-white hover:opacity-80 transition-opacity cursor-pointer">
+                            {headerData.mainData.firstName}{' '}
+                            <span className="stroke-text">{headerData.mainData.secondName}</span>
+                        </h1>
+                    </Link>
                 </div>
             </header>
         </div>

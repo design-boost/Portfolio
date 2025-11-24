@@ -48,7 +48,7 @@ const Portfolio = () => {
                 <p className="text-pColor dark:text-white/70">{portfolioData.mainData.description}</p>
             </div>
             <div className="filter mt-6 lg:mt-12">
-                <ul className="space-x-2">
+                <ul className="flex flex-wrap gap-2">
                     {portfolioData.filterCategories.map((category, index) => (
                         <li
                             key={index}
