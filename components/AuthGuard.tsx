@@ -15,14 +15,6 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
     // 環境変数から認証情報を取得（ビルド時に埋め込まれる）
     const AUTH_USERNAME = process.env.NEXT_PUBLIC_AUTH_USERNAME || 'admin';
     const AUTH_PASSWORD = process.env.NEXT_PUBLIC_AUTH_PASSWORD || 'password';
-    
-    // デバッグ用（本番環境では削除推奨）
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            console.log('Auth Username:', AUTH_USERNAME);
-            console.log('Auth Password:', AUTH_PASSWORD ? '***' : 'not set');
-        }
-    }, []);
 
     useEffect(() => {
         // localStorageから認証状態を確認
