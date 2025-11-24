@@ -13,8 +13,18 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
     const [error, setError] = useState('');
 
     // 環境変数から認証情報を取得（ビルド時に埋め込まれる）
-    const AUTH_USERNAME = process.env.NEXT_PUBLIC_AUTH_USERNAME || 'admin';
-    const AUTH_PASSWORD = process.env.NEXT_PUBLIC_AUTH_PASSWORD || 'password';
+    // Base64で難読化されているため、デコードする
+    const decodeAuth = (encoded: string | undefined, defaultValue: string): string => {
+        if (!encoded) return defaultValue;
+        try {
+            return atob(encoded);
+        } catch {
+            return defaultValue;
+        }
+    };
+    
+    const AUTH_USERNAME = decodeAuth(process.env.NEXT_PUBLIC_AUTH_USERNAME, 'admin');
+    const AUTH_PASSWORD = decodeAuth(process.env.NEXT_PUBLIC_AUTH_PASSWORD, 'password');
 
     useEffect(() => {
         // localStorageから認証状態を確認
