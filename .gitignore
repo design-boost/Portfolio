@@ -7,3 +7,4 @@ out/
 # Cursor/IDE
 .idea/
 .vscode/
+.vercel

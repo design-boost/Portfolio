@@ -425,13 +425,13 @@ export default function PortfolioDetail({ params }) {
                       <div className="flex items-center">
                         <i className="bi bi-globe text-lg mr-3 text-gray-600 dark:text-gray-400"></i>
                         <a href="https://baycrews.jp/" target="_blank" rel="noopener noreferrer" className="text-black dark:text-white underline">
-                          BAYCREW'S 公式サイト
+                          BAYCREW&apos;S 公式サイト
                         </a>
                       </div>
                       <div className="flex items-center">
                         <i className="bi bi-app text-lg mr-3 text-gray-600 dark:text-gray-400"></i>
                         <a href="https://apps.apple.com/jp/app/baycrews-%E3%83%99%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BA/id762058079" target="_blank" rel="noopener noreferrer" className="text-black dark:text-white underline">
-                          BAYCREW'S アプリ (App Store)
+                          BAYCREW&apos;S アプリ (App Store)
                         </a>
                       </div>
                     </>

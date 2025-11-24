@@ -5,7 +5,6 @@ import Media from "../components/Media";
 // import Blog from "../components/Blog";
 import Portfolio from "../components/Portfolio";
 import Connect from "../components/Connect";
-import BackgroundDecorationalLines from "../components/BackgroundDecorationalLines";
 // import Map from "@/components/Map";
 import Navigation from "@/components/Navigation";
 
