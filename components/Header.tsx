@@ -4,18 +4,24 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { headerData } from '@/lib/siteData';
 import { useTheme } from 'next-themes';
+import { useRouter } from 'next/navigation';
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const [, setHeaderHeight] = useState<number>(0);
     const [mounted, setMounted] = useState<boolean>(false);
+    const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
     const headerRef = useRef<HTMLElement>(null);
     const toggleMenuRef = useRef<HTMLDivElement>(null);
     const { theme, setTheme } = useTheme();
+    const router = useRouter();
 
     // マウント完了後にクライアントサイドのコードが実行されるようにする
     useEffect(() => {
         setMounted(true);
+        // 認証状態を確認
+        const authStatus = localStorage.getItem('portfolio_auth');
+        setIsAuthenticated(authStatus === 'authenticated');
     }, []);
 
     useEffect(() => {
@@ -38,6 +44,14 @@ const Header: React.FC = () => {
 
     const toggleTheme = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
+    };
+
+    const handleLogout = () => {
+        localStorage.removeItem('portfolio_auth');
+        setIsAuthenticated(false);
+        closeMenu();
+        router.refresh();
+        window.location.reload();
     };
 
     const currentYear = new Date().getFullYear();
@@ -98,11 +112,23 @@ const Header: React.FC = () => {
                             <Link
                                 href={item.url}
                                 className="font-mono font-medium uppercase text-sm tracking-[0.5px] text-white hover:underline"
+                                onClick={closeMenu}
                             >
                                 {item.name}
                             </Link>
                         </li>
                     ))}
+                    {isAuthenticated && (
+                        <li className="relative pl-3 before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-white before:opacity-70 before:w-1 before:h-1 before:rounded-full transition-all duration-100 hover:before:opacity-100">
+                            <button
+                                className="font-mono font-medium uppercase text-sm tracking-[0.5px] text-white hover:underline"
+                                onClick={handleLogout}
+                                aria-label="Logout"
+                            >
+                                ログアウト
+                            </button>
+                        </li>
+                    )}
                 </ul>
 
                 <div className="absolute bottom-12 left-10 right-10">
@@ -111,14 +137,6 @@ const Header: React.FC = () => {
                     </p>
                 </div>
 
-                {/* Close Button */}
-                <button
-                    className="menu-close absolute top-4 right-4 inline-flex justify-center items-center bg-white/15 w-10 h-10 rounded-full text-white text-xl transition ease-out duration-150 hover:bg-white/20"
-                    onClick={closeMenu}
-                    aria-label="Close menu"
-                >
-                    <i className="bi bi-x"></i>
-                </button>
             </div>
 
             {/* Header */}

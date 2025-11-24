@@ -138,20 +138,8 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
         );
     }
 
-    // 認証されている場合は通常のコンテンツを表示（ログアウトボタン付き）
-    return (
-        <>
-            <div className="fixed top-4 right-4 z-50">
-                <button
-                    onClick={handleLogout}
-                    className="px-4 py-2 bg-black/80 dark:bg-white/80 text-white dark:text-black text-sm font-medium rounded-lg hover:opacity-80 transition-opacity"
-                >
-                    ログアウト
-                </button>
-            </div>
-            {children}
-        </>
-    );
+    // 認証されている場合は通常のコンテンツを表示
+    return <>{children}</>;
 };
 
 export default AuthGuard;
