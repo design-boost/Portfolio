@@ -113,7 +113,7 @@ const Header: React.FC = () => {
                                 onClick={handleLogout}
                                 aria-label="Logout"
                             >
-                                ログアウト
+                                LOGOUT
                             </button>
                         </li>
                     )}
