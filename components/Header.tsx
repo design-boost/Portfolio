@@ -61,8 +61,18 @@ const Header: React.FC = () => {
             {/* Toggle Menu */}
             <div
                 ref={toggleMenuRef}
-                className={`toggle-menu ${isMenuOpen ? 'show' : ''} z-20 fixed top-0 right-0 translate-x-3 w-96 h-full bg-black dark:bg-boxDark dark:shadow-darkBox px-10 py-12 transition-all ease-out duration-150 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                className={`toggle-menu ${isMenuOpen ? 'show' : ''} z-20 fixed top-0 right-0 translate-x-3 w-96 h-full bg-black dark:bg-boxDark dark:shadow-darkBox px-10 pt-8 pb-12 transition-all ease-out duration-150 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
             >
+                {/* Close Button */}
+                <button
+                    className="font-mono font-medium uppercase text-sm tracking-[0.5px] text-white hover:opacity-70 transition-opacity mb-8 px-4 py-2 border border-gray-600 dark:border-gray-500 rounded flex items-center gap-2"
+                    onClick={closeMenu}
+                    aria-label="Close menu"
+                >
+                    <span className="inline-block w-0 h-0 border-l-[6px] border-l-white border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent"></span>
+                    <span>CLOSE</span>
+                </button>
+
                 {/* Menu Content */}
                 <h6 className="block font-mono font-normal uppercase text-sm tracking-[0.5px] text-white mb-2">
                     Phone:
