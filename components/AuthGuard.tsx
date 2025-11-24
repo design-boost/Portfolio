@@ -17,6 +17,14 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
     const AUTH_PASSWORD = process.env.NEXT_PUBLIC_AUTH_PASSWORD || 'password';
 
     useEffect(() => {
+        // デバッグ用：環境変数の値を確認
+        console.log('=== Auth Debug ===');
+        console.log('AUTH_USERNAME:', AUTH_USERNAME);
+        console.log('AUTH_PASSWORD:', AUTH_PASSWORD ? '***' : 'not set');
+        console.log('process.env.NEXT_PUBLIC_AUTH_USERNAME:', process.env.NEXT_PUBLIC_AUTH_USERNAME);
+        console.log('process.env.NEXT_PUBLIC_AUTH_PASSWORD:', process.env.NEXT_PUBLIC_AUTH_PASSWORD ? '***' : 'not set');
+        console.log('==================');
+        
         // localStorageから認証状態を確認
         const authStatus = localStorage.getItem('portfolio_auth');
         if (authStatus === 'authenticated') {
@@ -24,7 +32,7 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
         } else {
             setIsAuthenticated(false);
         }
-    }, []);
+    }, [AUTH_USERNAME, AUTH_PASSWORD]);
 
     const handleLogin = (e: React.FormEvent) => {
         e.preventDefault();
