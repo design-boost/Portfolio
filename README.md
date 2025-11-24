@@ -29,7 +29,10 @@ Next.js 15を使用した静的サイト生成（SSG）ポートフォリオサ�
 - **プロジェクト名**: `portfolio`
 - **プロジェクトID**: `prj_ntpH69BirgVieuKUW6wqteFekdns`
 - **組織ID**: `team_tDpsU6RkUgn0M524B6ze0o7A`
-- **デプロイURL**: https://portfolio-design-boost.vercel.app
+- **デプロイURL（エイリアス）**: https://portfolio-design-boost.vercel.app
+- **その他のエイリアス**:
+  - https://portfolio-steel-xi-b93id9gb97.vercel.app
+  - https://portfolio-git-main-design-boost.vercel.app
 
 ### 連携方法
 
@@ -45,12 +48,14 @@ Next.js 15を使用した静的サイト生成（SSG）ポートフォリオサ�
 
 ### 環境変数
 
-以下の環境変数がVercelのProduction環境に設定されています：
+以下の環境変数がVercelのProduction環境に設定されています（Base64エンコード済み）：
 
-- `NEXT_PUBLIC_AUTH_USERNAME`: 認証用ID
-- `NEXT_PUBLIC_AUTH_PASSWORD`: 認証用パスワード
+- `NEXT_PUBLIC_AUTH_USERNAME`: `dGFtYQ==` (Base64エンコードされた "tama")
+- `NEXT_PUBLIC_AUTH_PASSWORD`: `Z29vZGpvYg==` (Base64エンコードされた "goodjob")
 
-**重要**: 環境変数を設定する際は、値の最後に改行や空白が含まれないように注意してください。
+**重要**: 
+- 環境変数を設定する際は、値の最後に改行や空白が含まれないように注意してください
+- 認証情報はBase64で難読化されていますが、ビルド時にクライアントサイドに埋め込まれるため、完全なセキュリティではありません
 
 ### 環境変数の設定方法
 
@@ -113,7 +118,15 @@ npm run build
 
 - **認証コンポーネント**: `components/AuthGuard.tsx`
 - **認証状態**: localStorageに保存
-- **ログアウト**: 右上のログアウトボタンから実行可能
+- **ログアウト**: ハンバーガーメニュー内の「LOGOUT」ボタンから実行可能
+
+### ログイン情報
+
+- **URL**: https://portfolio-design-boost.vercel.app
+- **ID**: `tama`
+- **パスワード**: `goodjob`
+
+**注意**: 認証情報はBase64で難読化されていますが、完全なセキュリティではありません。簡易的な保護として機能しています。
 
 ## ディレクトリ構造
 
